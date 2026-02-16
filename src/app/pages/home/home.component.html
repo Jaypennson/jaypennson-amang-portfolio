@@ -1,0 +1,248 @@
+<main class="main-content">
+  <section id="about" class="content-section">
+    <div class="about-content">
+      <p>
+        I'm a passionate .Net Developer specializing in building robust,
+        scalable content management solutions. With extensive experience in C#,
+        .NET, and modern front-end frameworks, I create digital experiences that
+        are both powerful and intuitive.
+      </p>
+      <p>
+        My expertise lies in architecting complex
+        <strong>Umbraco CMS</strong> implementations, from building custom
+        dealer websites with dynamic inventory management to executing
+        large-scale platform migrations. I focus on writing clean, maintainable
+        code while delivering solutions that exceed client expectations.
+      </p>
+      <p>
+        Currently, I’m working as a Full Stack .NET Developer at
+        <strong>Professional Advantage</strong>, where I contribute to the
+        development and modernization of enterprise web platforms. I lead
+        migration projects from legacy systems to Umbraco CMS, designing robust
+        migration strategies, building custom automation tools to ensure data
+        integrity, and minimizing downtime during transitions.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Backend</h3>
+        <div class="skills">
+          <span class="skill-tag">Umbraco</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">.NET</span>
+          <span class="skill-tag">SQL Server</span>
+          <span class="skill-tag">Azure</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <div class="skills">
+          <span class="skill-tag">Angular.js</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">Bootstrap</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Tools & Practices</h3>
+        <div class="skills">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Azure DevOps</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">Agile</span>
+          <span class="skill-tag">CI/CD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="content-section">
+    <div class="experience-list">
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-period">2022 — Present</div>
+          <div class="experience-details">
+            <h3>Full Stack .Net Developer · Professional Advantage</h3>
+            <p class="experience-description">
+              Developed enterprise web applications and content management
+              solutions. Leading migrations from legacy systems to Umbraco CMS,
+              automating data processes, ensuring integrity, and delivering
+              thorough testing and documentation for enterprise web platforms.
+            </p>
+            <div class="experience-technologies">
+              <span class="tech-tag">Umbraco CMS</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">.NET</span>
+              <span class="tech-tag">Angular.js</span>
+              <span class="tech-tag">Azure</span>
+              <span class="tech-tag">SQL Server</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-period">2021 — 2022</div>
+          <div class="experience-details">
+            <h3>Frontend Developer · Inchcape Digital</h3>
+            <p class="experience-description">
+              Responsible for building and maintaining automotive websites for
+              brands such as Ford, BMW, MINI, and Inchcape across Northern
+              Europe. Focused primarily on front-end development using Umbraco
+              CMS, delivering responsive and high-quality user experiences.
+            </p>
+            <div class="experience-technologies">
+              <span class="tech-tag">Umbraco CMS</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">.NET </span>
+              <span class="tech-tag">Azure DevOps</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-period">2019 — 2021</div>
+          <div class="experience-details">
+            <h3>Product Development Engineer · Analog Devices</h3>
+            <p class="experience-description">
+              Supporting the backend-of-line (BEOL) manufacturing of integrated
+              circuits from assembly through final test. Responsible for yield
+              improvement, process optimization, and reliability of IC packages,
+              working closely with manufacturing, test, and quality teams.
+            </p>
+            <div class="experience-technologies">
+              <span class="tech-tag">Yield improvement & defect reduction</span>
+              <span class="tech-tag">Root cause analysis (8D, FMEA)</span>
+              <span class="tech-tag">Process characterization</span>
+              <span class="tech-tag">Cross-site manufacturing support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="/assets/jaypennson-amang-resume-full-stack-developer.pdf"
+      class="resume-link"
+      target="_blank"
+    >
+      View Full Resume
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M7 17L17 7"></path>
+        <path d="M7 7h10v10"></path>
+      </svg>
+    </a>
+  </section>
+
+  <section id="work" class="content-section">
+    <h2 class="section-title">Featured Work</h2>
+
+    <p class="work-note">
+      <em
+        >Note: The projects listed below were developed as part of my
+        employment. All work was completed within company constraints and
+        confidentiality agreements.</em
+      >
+    </p>
+
+    <div class="projects-list">
+      <article class="project-card" *ngFor="let project of featuredProjects">
+        <a
+          [href]="project.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-link"
+        >
+          <div class="project-header">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="external-link-icon"
+            >
+              <path d="M7 17L17 7"></path>
+              <path d="M7 7h10v10"></path>
+            </svg>
+          </div>
+
+          <div class="project-meta">
+            <span class="work-badge">{{ project.company }}</span>
+            <span class="work-badge">{{ project.year }}</span>
+            <span class="work-badge work-badge-type">{{
+              project.type === "built" ? "Built from Scratch" : "Migration"
+            }}</span>
+          </div>
+
+          <p class="project-description">{{ project.description }}</p>
+
+          <div class="project-technologies">
+            <span class="tech-tag" *ngFor="let tech of project.technologies">{{
+              tech
+            }}</span>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <a routerLink="/archive" class="archive-link">
+      <span>View Full Project Archive</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </a>
+  </section>
+
+  <footer class="footer">
+    <p>
+      Built with
+      <a href="https://angular.dev/" target="_blank" rel="noopener noreferrer"
+        >Angular</a
+      >
+      and coded with
+      <a
+        href="http://code.visualstudio.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Visual Studio Code</a
+      >, deployed with
+      <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer"
+        >Vercel</a
+      >.
+    </p>
+  </footer>
+</main>

@@ -1,0 +1,85 @@
+<div class="archive-container">
+  <header class="archive-header">
+    <a routerLink="/" class="back-link">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+      Jaypennson Amang
+    </a>
+    <h1>All Projects</h1>
+    <p class="archive-description">
+      A comprehensive list of projects I've worked on throughout my career as a
+      Full Stack Web Developer.
+    </p>
+  </header>
+
+  <div class="table-container">
+    <table class="archive-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Project</th>
+          <th class="hide-mobile">Company</th>
+          <th class="hide-mobile">Built with</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let project of allProjects">
+          <td class="year-cell">{{ project.year }}</td>
+          <td class="project-cell">
+            <div class="project-info">
+              <span class="project-name">{{ project.title }}</span>
+              <span class="project-role hide-desktop">{{ project.role }}</span>
+            </div>
+          </td>
+          <td class="company-cell hide-mobile">{{ project.company }}</td>
+          <td class="tech-cell hide-mobile">
+            <div class="tech-list">
+              <span *ngFor="let tech of project.technologies.slice(0, 3)">{{
+                tech
+              }}</span>
+            </div>
+          </td>
+          <td class="link-cell">
+            <a
+              [href]="project.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

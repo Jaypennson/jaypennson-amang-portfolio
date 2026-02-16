@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archive | Jaypennson Amang</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .archive-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        min-height: 100vh;
+      }
+
+      .archive-header {
+        margin-bottom: 3rem;
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--accent-color);
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        transition: gap 0.3s ease;
+      }
+
+      .back-link:hover {
+        gap: 0.75rem;
+      }
+
+      .archive-header h1 {
+        font-size: 3rem;
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      .archive-header p {
+        color: var(--text-secondary);
+        font-size: 1.125rem;
+      }
+
+      .archive-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .archive-table thead {
+        position: sticky;
+        top: 0;
+        background-color: var(--bg-primary);
+        z-index: 10;
+      }
+
+      .archive-table th {
+        text-align: left;
+        padding: 1rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--text-primary);
+        border-bottom: 1px solid var(--slate-700);
+      }
+
+      .archive-table td {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+      }
+
+      .archive-table tbody tr {
+        transition: background-color 0.3s ease;
+      }
+
+      .archive-table tbody tr:hover {
+        background-color: rgba(255, 255, 255, 0.03);
+      }
+
+      .year-cell {
+        color: var(--accent-color);
+        font-weight: 600;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .project-cell {
+        color: var(--text-primary);
+        font-weight: 600;
+      }
+
+      .company-cell {
+        color: var(--text-secondary);
+      }
+
+      .tech-cell {
+        color: var(--text-dim);
+        font-size: 0.875rem;
+      }
+
+      .link-cell a {
+        color: var(--text-dim);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+      }
+
+      .link-cell a:hover {
+        color: var(--accent-color);
+      }
+
+      .link-icon {
+        width: 16px;
+        height: 16px;
+      }
+
+      @media (max-width: 768px) {
+        .archive-container {
+          padding: 2rem 1rem;
+        }
+
+        .archive-header h1 {
+          font-size: 2rem;
+        }
+
+        .archive-table {
+          font-size: 0.875rem;
+        }
+
+        .archive-table th,
+        .archive-table td {
+          padding: 0.75rem 0.5rem;
+        }
+
+        .tech-cell,
+        .company-cell {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="archive-container">
+      <div class="archive-header">
+        <a href="index.html" class="back-link">
+          <span>←</span>
+          <span>Jay Pennson Amang</span>
+        </a>
+        <h1>All Projects</h1>
+        <p>
+          A complete list of websites I've built and migrated as part of
+          professional development teams.
+        </p>
+      </div>
+
+      <table class="archive-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Project</th>
+            <th class="company-cell">Company</th>
+            <th class="tech-cell">Built with</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Built from Scratch -->
+          <tr>
+            <td class="year-cell">2024</td>
+            <td class="project-cell">BMW Inchcape Latvia</td>
+            <td class="company-cell">Inchcape Motors</td>
+            <td class="tech-cell">Umbraco, C#, .NET</td>
+            <td class="link-cell">
+              <a
+                href="https://bmw-inchcape.lv/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>bmw-inchcape.lv</span>
+                <svg
+                  class="link-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="year-cell">2024</td>
+            <td class="project-cell">BMW Inchcape Estonia</td>
+            <td class="company-cell">Inchcape Motors</td>
+            <td class="tech-cell">Umbraco, C#, .NET</td>
+            <td class="link-cell">
+              <a
+                href="https://bmw.inchcape.ee/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>bmw.inchcape.ee</span>
+                <svg
+                  class="link-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="year-cell">2024</td>
+            <td class="project-cell">Ford Inchcape Latvia</td>
+            <td class="company-cell">Inchcape Motors</td>
+            <td class="tech-cell">Umbraco, C#, .NET</td>
+            <td class="link-cell">
+              <a
+                href="https://ford.inchcape.lv/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>ford.inchcape.lv</span>
+                <svg
+                  class="link-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="year-cell">2024</td>
+            <td class="project-cell">MINI Inchcape Lithuania</td>
+            <td class="company-cell">Inchcape Motors</td>
+            <td class="tech-cell">Umbraco, C#, .NET</td>
+            <td class="link-cell">
+              <a
+                href="https://mini.inchcape.lt/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>mini.inchcape.lt</span>
+                <svg
+                  class="link-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </td>
+          </tr>
+
+          <!-- Umbraco 7 to 13 Migrations -->
+          <tr>
+            <td class="year-cell">2023</td>
+            <td class="project-cell">PA Australia Blog (v7→13)</td>
+            <td class="company-cell">Professional Advantage</td>
+            <td class="tech-cell">Umbraco Migration, C#</td>
+            <td class="link-cell">
+              <a
+                href="http://blog.pa.com.au/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>blog.pa.com.au</span>
+                <svg
+                  class="link-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="year-cell">2023</td>
+            <td class="project-cell">PA Global Blog (v7→13)</td>
+            <td class="company-cell">Professional Advantage</td>
+            <td class="tech-cell">Umbraco Migration, C#</td>
+            <td class="link-cell">
+              <a
+                href="https://blog.professionaladvantage.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>blog.professionaladvantage.com</span>
+                <svg
+                  class="link-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </td>
+          </tr>
+
+          <!-- Umbraco 7 to 8 Migrations -->
+          <tr>
+            <td class="year-cell">2022</td>
+            <td class="project-cell">Professional Advantage Global (v7→8)</td>
+            <td class="company-cell">Professional Advantage</td>
+            <td class="tech-cell">Umbraco Migration, C#</td>
+            <td class="link-cell">
+              <a
+                href="https://www.professionaladvantage.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>professionaladvantage.com</span>
+                <svg
+                  class="link-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="year-cell">2022</td>
+            <td class="project-cell">
+              Professional Advantage Australia (v7→8)
+            </td>
+            <td class="company-cell">Professional Advantage</td>
+            <td class="tech-cell">Umbraco Migration, C#</td>
+            <td class="link-cell">
+              <a
+                href="https://www.pa.com.au/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>pa.com.au</span>
+                <svg
+                  class="link-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="year-cell">2022</td>
+            <td class="project-cell">1Staff Recruitment Platform (v7→8)</td>
+            <td class="company-cell">1Staff</td>
+            <td class="tech-cell">Umbraco Migration, C#</td>
+            <td class="link-cell">
+              <a
+                href="https://1staff.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>1staff.com</span>
+                <svg
+                  class="link-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="year-cell">2022</td>
+            <td class="project-cell">Upbeat Membership (v7→8)</td>
+            <td class="company-cell">Upbeat</td>
+            <td class="tech-cell">Umbraco Migration, C#, Payment Gateway</td>
+            <td class="link-cell">
+              <a
+                href="https://www.upbeatmembership.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>upbeatmembership.com</span>
+                <svg
+                  class="link-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="year-cell">2022</td>
+            <td class="project-cell">AgentStaff AI (v7→8)</td>
+            <td class="company-cell">AgentStaff</td>
+            <td class="tech-cell">Umbraco Migration, C#, API Integration</td>
+            <td class="link-cell">
+              <a
+                href="https://agentstaffai.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>agentstaffai.com</span>
+                <svg
+                  class="link-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
